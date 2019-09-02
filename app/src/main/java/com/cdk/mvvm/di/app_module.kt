@@ -1,5 +1,10 @@
-package com.cdk.mvvm
+package com.cdk.mvvm.di
 
+import com.cdk.mvvm.network.ApiService
+import com.cdk.mvvm.repository.SampleContract
+import com.cdk.mvvm.repository.SampleRepository
+import com.cdk.mvvm.viewmodel.SampleViewModel
+import com.cdk.mvvm.viewmodel.SampleWithParamViewModel
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import org.koin.android.viewmodel.ext.koin.viewModel
@@ -31,7 +36,11 @@ val apiModule = module {
 
 // In its own module since it can be used across modules
 val repositoryModule = module {
-    single<SampleContract.Repository> { SampleRepository(get()) }
+    single<SampleContract.Repository> {
+        SampleRepository(
+            get()
+        )
+    }
 }
 
 val sampleModule = module {
@@ -41,4 +50,8 @@ val sampleModule = module {
     viewModel { (id: Int) -> SampleWithParamViewModel(id, get()) }
 }
 
-val appModules = listOf(apiModule, sampleModule, repositoryModule)
+val appModules = listOf(
+    apiModule,
+    sampleModule,
+    repositoryModule
+)

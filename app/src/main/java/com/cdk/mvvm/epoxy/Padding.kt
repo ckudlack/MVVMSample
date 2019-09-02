@@ -1,4 +1,4 @@
-package com.cdk.mvvm
+package com.cdk.mvvm.epoxy
 
 import androidx.annotation.DimenRes
 

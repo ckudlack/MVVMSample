@@ -1,10 +1,13 @@
-package com.cdk.mvvm
+package com.cdk.mvvm.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.cdk.mvvm.R
+import com.cdk.mvvm.epoxy.SampleEpoxyController
+import com.cdk.mvvm.viewmodel.SampleWithParamViewModel
 import kotlinx.android.synthetic.main.activity_second_screen.*
 import org.koin.android.viewmodel.ext.android.viewModel
 import org.koin.core.parameter.parametersOf

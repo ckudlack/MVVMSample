@@ -1,6 +1,7 @@
-package com.cdk.mvvm
+package com.cdk.mvvm.epoxy
 
 import com.airbnb.epoxy.TypedEpoxyController
+import com.cdk.mvvm.commonTextView
 
 class SampleEpoxyController : TypedEpoxyController<String>() {
 

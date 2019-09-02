@@ -1,9 +1,11 @@
-package com.cdk.mvvm
+package com.cdk.mvvm.activity
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
+import com.cdk.mvvm.R
+import com.cdk.mvvm.viewmodel.SampleViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.viewmodel.ext.android.viewModel
 

@@ -1,4 +1,4 @@
-package com.cdk.mvvm
+package com.cdk.mvvm.epoxy
 
 import android.content.Context
 import android.text.Html
