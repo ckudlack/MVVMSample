@@ -65,8 +65,8 @@ dependencies {
 //    implementation "android.arch.navigation:navigation-fragment-ktx:$navVersion"
 //    implementation "android.arch.navigation:navigation-ui-ktx:$navVersion"
 
-//    implementation "com.airbnb.android:epoxy:$epoxy_version"
-//    kapt "com.airbnb.android:epoxy-processor:$epoxy_version"
+    implementation "com.airbnb.android:epoxy:$epoxy_version"
+    kapt "com.airbnb.android:epoxy-processor:$epoxy_version"
 //    implementation "com.airbnb.android:mvrx:$mvrx_version"
 
 //    implementation "android.arch.persistence.room:runtime:$roomVersion"
