@@ -9,7 +9,11 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
 
 /**
- * More info: https://android.jlelse.eu/koin-simple-android-di-a47827a707ce
+ * More info:
+ *
+ * https://android.jlelse.eu/koin-simple-android-di-a47827a707ce
+ * and
+ * https://old.insert-koin.io/docs/1.0/documentation/reference/index.html
  */
 
 // In its own module since it can be used across modules
