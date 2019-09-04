@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.cdk.mvvm.R
 import com.cdk.mvvm.epoxy.SampleEpoxyController
 import com.cdk.mvvm.viewmodel.SampleWithParamViewModel
