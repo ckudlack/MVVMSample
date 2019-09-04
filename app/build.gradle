@@ -62,18 +62,18 @@ dependencies {
     testImplementation 'android.arch.core:core-testing:1.1.1'
     testImplementation 'com.android.support.test:runner:1.1.1'
 
-//    implementation "android.arch.navigation:navigation-fragment-ktx:$navVersion"
-//    implementation "android.arch.navigation:navigation-ui-ktx:$navVersion"
+    implementation "android.arch.navigation:navigation-fragment-ktx:$navVersion"
+    implementation "android.arch.navigation:navigation-ui-ktx:$navVersion"
 
     implementation "com.airbnb.android:epoxy:$epoxy_version"
     kapt "com.airbnb.android:epoxy-processor:$epoxy_version"
-//    implementation "com.airbnb.android:mvrx:$mvrx_version"
+    implementation "com.airbnb.android:mvrx:$mvrx_version"
 
 //    implementation "android.arch.persistence.room:runtime:$roomVersion"
 //    kapt "android.arch.persistence.room:compiler:$roomVersion"
 
-//    implementation 'com.github.bumptech.glide:glide:4.9.0'
-//    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'

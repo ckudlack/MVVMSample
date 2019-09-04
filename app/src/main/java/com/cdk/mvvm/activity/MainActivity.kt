@@ -9,6 +9,10 @@ import com.cdk.mvvm.viewmodel.SampleViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.viewmodel.ext.android.viewModel
 
+/**
+ * If using MvRx don't forget to change this to extend #BaseMvRxActivity() !!!
+ */
+
 class MainActivity : AppCompatActivity() {
 
     private val viewModel: SampleViewModel by viewModel()
@@ -33,7 +37,7 @@ class MainActivity : AppCompatActivity() {
             })
         }
 
-        viewModel.data.observe(this, Observer<String> { data ->
+        viewModel.data.observe(this, Observer<List<String>> { data ->
             // UI updates here
         })
     }

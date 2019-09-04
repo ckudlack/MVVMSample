@@ -19,10 +19,10 @@ class SampleWithParamViewModel(
     private val disposable: CompositeDisposable = CompositeDisposable()
 
     /**
-     * Can also create a Result wrapper class to handle the loading, success, and error states
+     * Can also create a #Resource wrapper class to handle the loading, success, and error states
      * as well as the data itself
      */
-    val data: MutableLiveData<String> by lazy { MutableLiveData<String>() }
+    val data: MutableLiveData<List<String>> by lazy { MutableLiveData<List<String>>() }
     val loading: MutableLiveData<Boolean> by lazy { MutableLiveData<Boolean>() }
     val error: MutableLiveData<String> by lazy { MutableLiveData<String>() }
 

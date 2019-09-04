@@ -5,6 +5,6 @@ import io.reactivex.Single
 interface SampleContract {
 
     interface Repository {
-        fun getFromServer(param: Int): Single<String>
+        fun getFromServer(param: Int): Single<List<String>>
     }
 }

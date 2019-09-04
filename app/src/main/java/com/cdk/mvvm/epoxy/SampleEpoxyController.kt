@@ -2,14 +2,11 @@ package com.cdk.mvvm.epoxy
 
 import com.airbnb.epoxy.TypedEpoxyController
 
-class SampleEpoxyController : TypedEpoxyController<String>() {
+class SampleEpoxyController : TypedEpoxyController<List<String>>() {
 
-    override fun buildModels(data: String) {
+    override fun buildModels(data: List<String>) {
 
-        // let's pretend we're processing a list
-        val list = listOf(data)
-
-        list.forEachIndexed { index, s ->
+        data.forEachIndexed { index, s ->
             commonTextView {
                 id("string_$index")
                 body(s)
